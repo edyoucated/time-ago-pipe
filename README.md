@@ -45,6 +45,16 @@ where "your_date" is a local date string, which could be parsed by the standard 
 
 If this value is null or not parsable as a date, then the pipe will display nothing
 
+## i18n
+
+English (`en`, default) and German (`de`) are supported.
+
+To use a specific locale you can pass it as a parameter:
+
+```
+<span>{{your_date | timeAgo:'de'}}</span>
+```
+
 # Publish to [npm](https://www.npmjs.com/package/@edyoucated/time-ago-pipe)
 
     rm -rf dist; npm run build; cd dist; npm publish --access public; cd ..
